@@ -1,3 +1,45 @@
+# Colcon build artifacts
+/build/
+/install/
+/log/
+
+# Python compiled files and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+
+# C++ compiled objects and shared libraries
+*.o
+*.so
+*.a
+*.swp
+*.swo
+
+# IDEs and Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.user
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Temporary or local notes
+*.local
+
 # ROS 2-generated files
 **/install/
 **/log/
@@ -5,3 +47,53 @@
 
 # VS Code settings
 /.vscode/
+
+# ==========================================
+# ROS 2 Specific Folders
+# ==========================================
+# These are generated when you run 'colcon build'
+build/
+install/
+log/
+
+# COLCON_IGNORE tells colcon not to build anything in these folders
+# (Only uncomment if you manually place a COLCON_IGNORE file)
+# COLCON_IGNORE
+
+# ==========================================
+# Build Artifacts and C++ Stuff
+# ==========================================
+*.o
+*.so
+*.a
+*.la
+*.lo
+*.dylib
+CMakeFiles/
+CMakeCache.txt
+CMakeLists.txt.user*
+compile_commands.json
+
+# ==========================================
+# Python Specific Files
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+.venv/
+env/
+
+# ==========================================
+# IDEs and Text Editors
+# ==========================================
+.vscode/
+.idea/
+.project
+.cproject
+*.swp
+*~
+.DS_Store
+
